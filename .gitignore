@@ -1,0 +1,20 @@
+# Secrets — never committed
+.env
+secrets/
+
+# IRIS / test output
+test-results/
+*.log
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Node
+node_modules/
+
+# OS / editor
+project/
+.DS_Store
+Thumbs.db
