@@ -6,7 +6,19 @@ ClassMethod Run() As %Status
     #include %occStatus
     Try {
         Set $Namespace = "%SYS"
-        Set properties("Globals") = "USER", properties("Routines") = "USER"
+        Set directory = "/usr/irissys/mgr/registrytest/"
+        If '##class(%File).CreateDirectoryChain(directory) {
+            Throw ##class(%Exception.StatusException).CreateFromStatus($$$ERROR($$$GeneralError, "Cannot create test database directory"))
+        }
+        Set database = ##class(SYS.Database).%New()
+        Set database.Directory = directory
+        Set sc = database.%Save()
+        $$$ThrowOnError(sc)
+        Set properties("Directory") = directory
+        Set sc = ##class(Config.Databases).Create("REGISTRYTEST", .properties)
+        $$$ThrowOnError(sc)
+        Kill properties
+        Set properties("Globals") = "REGISTRYTEST", properties("Routines") = "REGISTRYTEST"
         Set sc = ##class(Config.Namespaces).Create("REGISTRYTEST", .properties)
         $$$ThrowOnError(sc)
         Set $Namespace = "REGISTRYTEST"

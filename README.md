@@ -65,7 +65,7 @@ the base image with `docker build --build-arg IRIS_IMAGE=<image> ...` if needed.
 Community images have time-limited licenses; use a current release when an
 older image's license expires.
 The test runner creates `REGISTRYTEST` in a **fresh disposable container**,
-using its initially empty USER database, imports/compiles the UDL, and runs
+using its own new empty database, imports/compiles the UDL, and runs
 `%UnitTest`. It propagates compilation/test failures to the shell and removes
 the container. Do not run the CI driver against an existing patient database:
 tests clear the patient extent.
