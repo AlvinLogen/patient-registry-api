@@ -5,6 +5,7 @@ secrets/
 # IRIS / test output
 test-results/
 *.log
+fixtures/
 
 # Python
 .venv/
