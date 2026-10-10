@@ -1,0 +1,26 @@
+name: patient-registry-api
+
+services:
+  iris:
+    image: ${IRIS_IMAGE:?set IRIS_IMAGE in .env (copy .env.example)}
+    container_name: patient-registry-iris
+    command: --password-file /run/secrets/iris_admin_password
+    ports:
+      - "127.0.0.1:${IRIS_SUPERSERVER_PORT:-41972}:1972"
+      - "127.0.0.1:${IRIS_WEB_PORT:-42773}:52773"
+    volumes:
+      - ./src:/home/irisowner/dev/src:ro
+      - ./docker/iris:/home/irisowner/dev/docker/iris:ro
+    secrets:
+      - iris_admin_password
+    healthcheck:
+      test: ["CMD-SHELL", "iris qlist IRIS | grep -q running"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    stop_grace_period: 60s
+
+secrets:
+  iris_admin_password:
+    file: ./secrets/iris_admin_password.txt
