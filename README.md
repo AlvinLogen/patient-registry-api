@@ -35,7 +35,9 @@ automatically instantiate an empty object, so absence is checked with `%IsNull()
 
 `PatientRegistry.Patient.CheckDigit(payload)` runs Embedded Python and returns
 the Luhn digit to append to a nonempty ASCII-digit payload. The standalone
-`python/mrn.py` exposes the same `check_digit` algorithm and `is_valid`.
+`python/patient_registry/mrn.py` exposes the same algorithm as
+`luhn_check_digit` and `is_valid_mrn`, checked against the shared vectors in
+`fixtures/vectors/mrn-check-digit.json`.
 Check digits are a helper, not a restriction on external authorities' MRNs.
 
 ## Fixtures and tests
@@ -43,15 +45,15 @@ Check digits are a helper, not a restriction on external authorities' MRNs.
 Generate only synthetic data (no real patient information):
 
 ```bash
-mkdir -p fixtures
-node scripts/generate-fixtures.js 25 > fixtures/patients.json
+(cd tools/node && npm run generate && npm test)
 python -m venv .venv
 .venv/bin/python -m pip install -r requirements-dev.txt
 .venv/bin/python -m pytest -q
 ```
 
-The generator accepts 1–10,000 patients, produces deterministic distinct MRNs
-with valid Luhn digits, and writes a JSON array to stdout.
+The generator (`tools/node/generate-patients.mjs`) is deterministic for a given
+`--seed` and writes `--count` patients with distinct MRNs and valid Luhn digits
+to `fixtures/generated/patients.json`.
 
 Run the IRIS integration tests with Docker:
 
@@ -71,7 +73,8 @@ the container. Do not run the CI driver against an existing patient database:
 tests clear the patient extent.
 
 GitHub Actions performs the container build, namespace creation, UDL import,
-compilation, `%UnitTest`, and then pytest (which also exercises the Node
-generator). IRIS tests cover uniqueness, JSON round trips, partial merges,
+compilation, `%UnitTest`, and then pytest (`python/tests`). The Node generator
+tests (`tools/node`) are not yet run in CI. IRIS tests cover uniqueness, JSON
+round trips, partial merges,
 cached-object refresh, rollback, lock timeout, literal SQL host variables,
 invalid input, transaction boundaries, and Embedded Python.
