@@ -1,0 +1,13 @@
+{
+  "name": "patient-fixture-generator",
+  "version": "1.0.0",
+  "private": "true",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node generate-patients.mjs --count 50 --seed 20261001 --out ../../fixtures/generated/patients.json",
+    "test": "node --test"
+  }
+}
