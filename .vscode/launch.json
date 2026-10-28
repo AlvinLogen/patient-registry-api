@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "objectscript",
+      "request": "launch",
+      "name": "ObjectScript: debug MergeDemo",
+      "program": "##class(PatientRegistry.Service.PatientService).MergeDemo()"
+    },
+    {
+      "type": "objectscript",
+      "request": "launch",
+      "name": "ObjectScript: debug MrnCheck.IsValid",
+      "program": "##class(PatientRegistry.Util.MrnCheck).IsValid(\"10000016\")"
+    }
+  ]
+}
