@@ -11,6 +11,7 @@ services:
     volumes:
       - ./src:/home/irisowner/dev/src:ro
       - ./docker/iris:/home/irisowner/dev/docker/iris:ro
+      - ./fixtures:/home/irisowner/dev/fixtures:ro
     secrets:
       - iris_admin_password
     healthcheck:
