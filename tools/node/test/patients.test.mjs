@@ -37,7 +37,7 @@ test("the requested number of patients is returned", () => {
 test("identities (authority + MRN) are unique", () => {
   const patients = generatePatients(500, 7);
   const identities = new Set(
-    patients.map((p) => `${p.assignAuthority}|${p.mrn}`),
+    patients.map((p) => `${p.assigningAuthority}|${p.mrn}`),
   );
   assert.equal(identities.size, patients.length);
 });
@@ -51,7 +51,7 @@ test("every MRN has a valid check digit and 8 digits", () => {
 
 test("data is synthetic by construction", () => {
   for (const patient of generatePatients(200, 11)) {
-    assert.match(patient.assignAuthority, /^SYNTH-/);
+    assert.match(patient.assigningAuthority, /^SYNTH-/);
   }
 });
 
