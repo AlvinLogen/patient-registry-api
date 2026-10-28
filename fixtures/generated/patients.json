@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "24232522",
       "familyName": "Syntheton-Placeholder",
       "givenName": "Morgan",
@@ -18,7 +18,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "26587055",
       "familyName": "Testfamily",
       "givenName": "Sam",
@@ -35,7 +35,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "71347157",
       "familyName": "Mockwell",
       "givenName": "Robin",
@@ -52,7 +52,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "88329313",
       "familyName": "Fixtureson",
       "givenName": "Morgan",
@@ -69,7 +69,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "64282460",
       "familyName": "Samplesurname",
       "givenName": "Riley",
@@ -86,7 +86,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "31321474",
       "familyName": "van der Fixture",
       "givenName": "Robin",
@@ -103,7 +103,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "78820180",
       "familyName": "Syntheton-Placeholder",
       "givenName": "Casey",
@@ -120,7 +120,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "34761007",
       "familyName": "Fixtureson",
       "givenName": "Jamie",
@@ -137,7 +137,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "85194736",
       "familyName": "Syntheton-Placeholder",
       "givenName": "Casey",
@@ -154,7 +154,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "72417645",
       "familyName": "Syntheton-Placeholder",
       "givenName": "Sam",
@@ -171,7 +171,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "61827622",
       "familyName": "O'Testington",
       "givenName": "Riley",
@@ -188,7 +188,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "32773301",
       "familyName": "Testfamily",
       "givenName": "Zoë",
@@ -205,7 +205,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "90792987",
       "familyName": "Testfamily",
       "givenName": "Taylor",
@@ -222,7 +222,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "47402144",
       "familyName": "Dummyfield",
       "givenName": "Riley",
@@ -239,7 +239,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "28766152",
       "familyName": "Testfamily",
       "givenName": "Casey",
@@ -256,7 +256,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "68756196",
       "familyName": "O'Testington",
       "givenName": "Jordan",
@@ -273,7 +273,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "25727397",
       "familyName": "Testfamily",
       "givenName": "Alex",
@@ -290,7 +290,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "87624151",
       "familyName": "Mockwell",
       "givenName": "Morgan",
@@ -307,7 +307,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "60828936",
       "familyName": "Testfamily",
       "givenName": "Alex",
@@ -324,7 +324,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "28246031",
       "familyName": "van der Fixture",
       "givenName": "Zoë",
@@ -341,7 +341,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "40440455",
       "familyName": "Mockwell",
       "givenName": "Robin",
@@ -358,7 +358,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "41960048",
       "familyName": "Dummyfield",
       "givenName": "Morgan",
@@ -375,7 +375,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "81690414",
       "familyName": "Samplesurname",
       "givenName": "Casey",
@@ -392,7 +392,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "62399563",
       "familyName": "Fixtureson",
       "givenName": "Zoë",
@@ -409,7 +409,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "11531688",
       "familyName": "Dummyfield",
       "givenName": "Casey",
@@ -426,7 +426,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "17092586",
       "familyName": "Dummyfield",
       "givenName": "Morgan",
@@ -443,7 +443,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "20168696",
       "familyName": "Samplesurname",
       "givenName": "Morgan",
@@ -460,7 +460,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "38803144",
       "familyName": "Mockwell",
       "givenName": "Zoë",
@@ -477,7 +477,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "67832873",
       "familyName": "Samplesurname",
       "givenName": "Sam",
@@ -494,7 +494,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "38858668",
       "familyName": "Syntheton-Placeholder",
       "givenName": "Taylor",
@@ -511,7 +511,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "24473100",
       "familyName": "Testfamily",
       "givenName": "Jamie",
@@ -528,7 +528,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "69776169",
       "familyName": "Dummyfield",
       "givenName": "Jordan",
@@ -545,7 +545,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "53021432",
       "familyName": "Samplesurname",
       "givenName": "Casey",
@@ -562,7 +562,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "88275508",
       "familyName": "Testfamily",
       "givenName": "Robin",
@@ -579,7 +579,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "18746230",
       "familyName": "O'Testington",
       "givenName": "Taylor",
@@ -596,7 +596,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "53813002",
       "familyName": "Dummyfield",
       "givenName": "Jordan",
@@ -613,7 +613,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "64745508",
       "familyName": "Testfamily",
       "givenName": "Jordan",
@@ -630,7 +630,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "33001728",
       "familyName": "van der Fixture",
       "givenName": "Riley",
@@ -647,7 +647,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "12461224",
       "familyName": "Fixtureson",
       "givenName": "Jamie",
@@ -664,7 +664,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "23155187",
       "familyName": "Mockwell",
       "givenName": "Taylor",
@@ -681,7 +681,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "69050540",
       "familyName": "van der Fixture",
       "givenName": "Riley",
@@ -698,7 +698,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "72240211",
       "familyName": "Fixtureson",
       "givenName": "Riley",
@@ -715,7 +715,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "12143145",
       "familyName": "Testfamily",
       "givenName": "Jamie",
@@ -732,7 +732,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "52419785",
       "familyName": "Testfamily",
       "givenName": "Casey",
@@ -749,7 +749,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-A",
+      "assigningAuthority": "SYNTH-HOSP-A",
       "mrn": "81123366",
       "familyName": "Fixtureson",
       "givenName": "Riley",
@@ -766,7 +766,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "12187506",
       "familyName": "Fixtureson",
       "givenName": "Jordan",
@@ -783,7 +783,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "27693670",
       "familyName": "O'Testington",
       "givenName": "Morgan",
@@ -800,7 +800,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-LAB-C",
+      "assigningAuthority": "SYNTH-LAB-C",
       "mrn": "39635198",
       "familyName": "Fixtureson",
       "givenName": "Zoë",
@@ -817,7 +817,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "40413668",
       "familyName": "O'Testington",
       "givenName": "Alex",
@@ -834,7 +834,7 @@
       "active": true
     },
     {
-      "assignAuthority": "SYNTH-HOSP-B",
+      "assigningAuthority": "SYNTH-HOSP-B",
       "mrn": "56003023",
       "familyName": "Testfamily",
       "givenName": "Casey",
@@ -853,7 +853,7 @@
   ],
   "meta": {
     "generator": "patient-fixture-generator",
-    "schemaVersion": "1.0.0",
+    "schemaVersion": "1.1.0",
     "seed": 20261001,
     "count": 50
   }

@@ -1,7 +1,7 @@
 import { luhnCheckDigit } from "./luhn.mjs";
 import { createRng } from "./prng.mjs";
 
-export const SCHEMA_VERSION = "1.0.0";
+export const SCHEMA_VERSION = "1.1.0";
 const MAX_COUNT = 10000;
 
 const AUTHORITIES = ["SYNTH-HOSP-A", "SYNTH-HOSP-B", "SYNTH-LAB-C"];
@@ -64,17 +64,17 @@ export function generatePatients(count, seed) {
   const patients = [];
 
   while (patients.length < count) {
-    const assignAuthority = pick(rng, AUTHORITIES);
+    const assigningAuthority = pick(rng, AUTHORITIES);
     const payload = String(inBetween(rng, 1_000_000, 9_999_999));
     const mrn = payload + luhnCheckDigit(payload);
-    const identity = `${assignAuthority}|${mrn}`;
+    const identity = `${assigningAuthority}|${mrn}`;
 
     if (seen.has(identity)) continue;
     seen.add(identity);
 
     const place = pick(rng, PLACES);
     patients.push({
-      assignAuthority,
+      assigningAuthority,
       mrn,
       familyName: pick(rng, FAMILY),
       givenName: pick(rng, GIVEN),
