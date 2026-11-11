@@ -14,6 +14,7 @@ services:
       - ./fixtures:/home/irisowner/dev/fixtures:ro
     secrets:
       - iris_admin_password
+      - iris_app_password
     healthcheck:
       test: ["CMD-SHELL", "iris qlist IRIS | grep -q running"]
       interval: 10s
@@ -25,3 +26,5 @@ services:
 secrets:
   iris_admin_password:
     file: ./secrets/iris_admin_password.txt
+  iris_app_password:
+    file: ./secrets/iris_app_password.txt

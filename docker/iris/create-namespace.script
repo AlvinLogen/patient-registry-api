@@ -1,4 +1,6 @@
 do $SYSTEM.OBJ.Load("/home/irisowner/dev/src/PatientRegistry/Setup/Installer.cls", "ck")
 set sc = ##class(PatientRegistry.Setup.Installer).Run("PATREG")
 if $SYSTEM.Status.IsError(sc) {do $SYSTEM.Status.DisplayError(sc)}
+set sc = ##class(PatientRegistry.Setup.Installer).CreateApplicationAccess("PATREG")
+if $SYSTEM.Status.IsError(sc) { do $SYSTEM.Status.DisplayError(sc)}
 halt
