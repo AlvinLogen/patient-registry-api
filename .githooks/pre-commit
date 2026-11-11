@@ -1,0 +1,11 @@
+#!/bin/sh
+# Blocks the commit when Gitleaks finds a secret in the staged changes.
+if ! command -v gitleaks >/dev/null 2>&1; then 
+  echo "gitleaks is not installed - install it before commit (see README Night 5, Step 7)." >&2
+  exit 1
+fi
+if gitleaks git --help >/dev/null 2>&1; then
+  exec gitleaks git --pre-commit --staged --redact --no-banner
+else 
+  exec gitleaks protect --staged --redact --no-banner
+fi
