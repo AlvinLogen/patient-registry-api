@@ -1,0 +1,5 @@
+// Run inside the container: iris session IRIS -U USER < run-tests.script
+zn "PATREG"
+Set ok = ##class(PatientRegistry.Setup.TestRunner).Run()
+write $select(ok:"UNITTEST-RESULT: PASS", 1:"UNITTEST-RESULT: FAIL"), !
+halt
