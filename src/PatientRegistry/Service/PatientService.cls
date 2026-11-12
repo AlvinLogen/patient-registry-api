@@ -1,6 +1,6 @@
 /// Use-case operations on patients: bulk import/export and the merge-safe update.
 /// Every operation returns a %Status whose text starts with a stable Pr-* code on failure.
-Class PatientRegistry.Service.PatientService
+Class PatientRegistry.Service.PatientService [ DependsOn = PatientRegistry.Model.Patient ]
 {
     /// Second to wait for a patient lock.
     Parameter LOCKTIMEOUT = 5;
@@ -238,5 +238,17 @@ Class PatientRegistry.Service.PatientService
     ClassMethod Fail(pCode As %String, pText As %String) As %Status [ Private ]
     {
         Quit $$$ERROR($$$GeneralError, pCode_": "_pText)
+    }
+
+    /// Soft delete: marks the patient inactive. The identity stays reserved.
+    ClassMethod Deactivate(pAuthority AS %String, pMRN AS %String, pExpectedVersion AS %Integer = "", Output pVersion AS %Integer) As %Status
+    {
+        Quit ..MergeUpdate(pAuthority, pMRN, {"active": false}, pExpectedVersion, .pVersion)
+    }
+
+    /// Reverses Deactivate
+    ClassMethod Reactivate(pAuthority AS %String, pMRN AS %String, pExpectedVersion AS %Integer = "", Output pVersion AS %Integer) As %Status
+    {
+        Quit ..MergeUpdate(pAuthority, pMRN, {"active": true}, pExpectedVersion, .pVersion)
     }
 }
