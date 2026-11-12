@@ -82,7 +82,7 @@ Class PatientRegistry.Setup.Installer
             New $NAMESPACE
             Set $NAMESPACE = pNamespace
             Set stmt = ##class(%SQL.Statement).%New()
-            $$$ThrowOnError(stmt.%Prepare("GRANT SELECT, INSERT, UPDATE, DELETE ON PatientRegistry_Model.Patient TO "_pNamespace_"_APP"))
+            $$$ThrowOnError(stmt.%Prepare("GRANT SELECT, INSERT, UPDATE ON PatientRegistry_Model.Patient TO "_pNamespace_"_APP"))
             Set rs = stmt.%Execute()
             If rs.%SQLCODE < 0 {
                 Throw ##class(%Exception.SQL).CreateFromSQLCODE(rs.%SQLCODE, rs.%Message)

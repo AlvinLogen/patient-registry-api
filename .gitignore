@@ -18,3 +18,7 @@ node_modules/
 project/
 .DS_Store
 Thumbs.db
+
+# UDL Related Files
+exported-udl/
+fixtures/generated/large.json
