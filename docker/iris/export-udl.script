@@ -1,0 +1,5 @@
+// Run inside the container: iris session IRIS -U USER < export-udl.script
+zn "PATREG"
+do ##class(%File).CreateDirectoryChain("/tmp/udl")
+for name = "Patient", "Address" { set sc = $SYSTEM.OBJ.ExportUDL("PatientRegistry.Model."_name_".CLS", "/tmp/udl/"_name_".cls") if $SYSTEM.Status.IsError(sc) { do $SYSTEM.Status.DisplayError(sc)}}
+halt
